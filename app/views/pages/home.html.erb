@@ -1,10 +1,19 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://pixabay.com/get/g37250759f2203ac887c2f1bc84d170c95b2a0279538200d2990be8de0739cf4a175a4d70f7169f39f360aeb01fdc17a8_1920.jpg);">
+  <div class="container">
+    <h1>Recherchez un <strong>hotel</strong></h1>
+    <p>en quelques cliques</p>
+    <p>et à prix réduit</p>
+    <%= link_to 'Rechercher', rooms_path, class: 'btn btn-banner mt-3' %>
+  </div>
+</div>
+
 <div class="container py-5">
   <div class="row">
     <div class="col-12 col-md-12">
       <div class="bg-white rounded p-5 shadow">
         <h1>Découvrez nos meilleurs offres du moment</h1>
 
-        <div class="row">
+        <div class="row d-flex justify-content-between">
           <% @rooms.each do |room| %>
             <%= link_to(room_path(room), class: "card-link") do %>
               <div class="my-card">

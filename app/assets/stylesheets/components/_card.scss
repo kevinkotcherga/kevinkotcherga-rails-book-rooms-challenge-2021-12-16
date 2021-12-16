@@ -1,7 +1,7 @@
 .my-card {
   height: 300px;
   width: 200px;
-  background-color: rgba(0, 0, 172, 0.767);
+  background-color: white;
   border-radius: 20px;
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   padding: 30px;
@@ -17,7 +17,7 @@
   margin-right: auto;
   // width: 300px;
   height: 100px;
-  background-color: white;
+  background-color: black;
   object-fit: cover;
   border-radius: 20px;
 }
@@ -31,6 +31,7 @@
 
 .container-card {
   color:white;
+  color: black;
 }
 
 .btn-louer {
