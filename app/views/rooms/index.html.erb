@@ -1,21 +1,16 @@
-<div class="container py-5">
+<div class="container mt-4">
+  <%= link_to root_path, class: 'text-success text-decoration-none d-flex align-items-center ml-3' do %>
+    <i class="fas fa-angle-left"></i>
+    <p class="mb-0 ml-1">Retour</p>
+  <% end %>
+</div>
+
+<h1 class="text-center my-5">Des hôtels à prix réduit</h1>
+
+<div class="container">
   <div class="row">
-    <div class="col-12 col-md-12">
-      <div class="bg-white rounded p-5 shadow">
-        <h1 class="mb-5">Chambres disponibles</h1>
-
-        <div class="row">
-            <% @rooms.each do |room| %>
-              <div class="co-12 col-sm-4 col-md-4">
-                <%= link_to room_path(room), class: "btn btn-dark m-1" do %>
-                    <p><%= room.price_per_night %> €</p>
-                <% end %>
-              </div>
-            <% end %>
-          </div>
-
-        <%= link_to 'Retour', root_path, class: 'btn btn-primary m-1' %>
-      </div>
-    </div>
+    <% @rooms.each do |room| %>
+      <div class="d-flex m-4"><%= render 'shared/cards', room: room %></div>
+    <% end %>
   </div>
 </div>

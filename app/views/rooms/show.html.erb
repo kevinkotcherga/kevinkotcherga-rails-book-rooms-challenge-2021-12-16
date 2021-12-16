@@ -4,6 +4,7 @@
       <div class="bg-white rounded p-5 shadow">
         <h1><%= @room.price_per_night %> €</h1>
         <p>Hotel : <%= @room.hotel.name %></p>
+        <img src="https://pixabay.com/get/g24206de60c99c0aec1a1da126d4678bf042c20023047a7100f2a50045127aebdf6e138b635e857658045195dad56336c_640.jpg">
 
           <%= simple_form_for [ @room, @booking ] do |f| %>
               <%= f.input :starts_at, label: "Sélectionnez vos dates:",
