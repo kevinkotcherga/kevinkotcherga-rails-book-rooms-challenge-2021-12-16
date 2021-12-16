@@ -1,0 +1,19 @@
+<div class="container py-5">
+  <div class="row">
+    <div class="col-12 col-md-12">
+      <div class="bg-white rounded p-5 shadow">
+        <h1><%= @room.price_per_night %> €</h1>
+        <p>Hotel : <%= @room.hotel.name %></p>
+
+          <%= simple_form_for [ @room, @booking ] do |f| %>
+              <%= f.input :starts_at, label: "Date de départ" %>
+              <%= f.input :ends_at, label: "Date de retour" %>
+              <%= f.submit value: "Réserver", class: "btn btn-success"%>
+          <% end %>
+
+        <%= link_to 'Retour', rooms_path, class: 'btn btn-primary m-1' %>
+
+      </div>
+    </div>
+  </div>
+</div>

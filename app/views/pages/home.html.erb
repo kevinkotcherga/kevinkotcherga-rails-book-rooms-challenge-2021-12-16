@@ -1,2 +1,29 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container py-5">
+  <div class="row">
+    <div class="col-12 col-md-12">
+      <div class="bg-white rounded p-5 shadow">
+        <h1>Pages#home</h1>
+        <p>Find me in app/views/pages/home.html.erb</p>
+
+        <div>
+          <% @rooms.each do |room| %>
+            <%= link_to(room_path(room), class: "card-link") do %>
+              <div class="my-card">
+                <div class="my-card-img">
+                </div>
+                <div class="container-card">
+                  <h4><%= room.price_per_night%> €</h4>
+                  <p><%= room.capacity%></p>
+                  <p><%= room.hotel.name %></p>
+                  <p class="btn-louer">Louer</p>
+                </div>
+              </div>
+            <% end %>
+          <% end %>
+        </div>
+
+        <%= link_to 'Voir les chambres', rooms_path, class: 'btn btn-primary m-1' %>
+      </div>
+    </div>
+  </div>
+</div>
