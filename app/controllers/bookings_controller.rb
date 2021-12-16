@@ -1,4 +1,8 @@
 class BookingsController < ApplicationController
+  def index
+    @bookings = Booking.all
+  end
+
   def new
     @booking = Booking.new
   end
@@ -10,6 +14,11 @@ class BookingsController < ApplicationController
     @booking.user = current_user
     @booking.save
     redirect_to room_path(@room)
+  end
+
+  def destroy
+    @booking = Booking.find(params[:id])
+    @booking.destroy
   end
 
   private

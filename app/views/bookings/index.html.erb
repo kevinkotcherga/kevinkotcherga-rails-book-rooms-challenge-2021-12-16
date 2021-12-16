@@ -1,0 +1,20 @@
+<div class="container py-5">
+  <div class="row">
+    <div class="col-12 col-md-12">
+      <div class="bg-white rounded p-5 shadow">
+        <h1 class="mb-5">Mes réservations</h1>
+
+        <div class="row">
+            <% @bookings.each do |booking| %>
+              <div class="co-12 col-sm-4 col-md-4 reservation-card">
+                <p><%= booking.starts_at %></p>
+                <p><%= booking.ends_at %></p>
+              </div>
+            <% end %>
+          </div>
+
+        <%= link_to 'Retour', root_path, class: 'btn btn-primary m-1' %>
+      </div>
+    </div>
+  </div>
+</div>

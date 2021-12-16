@@ -2,10 +2,9 @@
   <div class="row">
     <div class="col-12 col-md-12">
       <div class="bg-white rounded p-5 shadow">
-        <h1>Pages#home</h1>
-        <p>Find me in app/views/pages/home.html.erb</p>
+        <h1>Découvrez nos meilleurs offres du moment</h1>
 
-        <div>
+        <div class="row">
           <% @rooms.each do |room| %>
             <%= link_to(room_path(room), class: "card-link") do %>
               <div class="my-card">
