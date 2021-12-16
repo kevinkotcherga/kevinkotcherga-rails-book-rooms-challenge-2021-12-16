@@ -12,8 +12,11 @@ class BookingsController < ApplicationController
     @room = Room.find(params[:room_id])
     @booking.room = @room
     @booking.user = current_user
-    @booking.save
-    redirect_to room_path(@room)
+    if @booking.save
+      redirect_to room_path(@room), notice: "La chambre est louée"
+    else
+      redirect_to room_path(@room), alert: "Oups, ça n'a pas marché"
+    end
   end
 
   def destroy
