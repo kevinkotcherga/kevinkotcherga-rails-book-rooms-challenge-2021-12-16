@@ -1,9 +1,9 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://pixabay.com/get/ga1b9e4b87981e0799ddbb250df9b545bf10660b6a029088110a03c9e577cc8ca0cee2a4c6f660b7dd32b4b6e13e0f671a727321e06b1f54bf76b629c48901781_1920.jpg);">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= asset_path('banner.jpg') %>);">
   <div class="container">
     <h1>Recherchez un <strong>hotel</strong></h1>
     <p>en quelques cliques</p>
     <p>et à prix réduit</p>
-    <%= link_to 'Rechercher', rooms_path, class: 'btn btn-banner mt-3' %>
+    <%= link_to 'Rechercher', rooms_path, class: 'btn btn-banner mt-3 font-weight-bold' %>
   </div>
 </div>
 
@@ -11,7 +11,7 @@
   <div class="row">
     <div class="col-12 col-md-12">
       <div class="bg-white rounded p-5 shadow">
-        <h1>Découvrez nos meilleurs offres du moment</h1>
+        <h1 class="text-center my-5">Découvrez nos meilleurs offres du moment</h1>
 
         <div class="container">
           <div class="row">
@@ -21,7 +21,10 @@
           </div>
         </div>
 
-        <%= link_to 'Voir les chambres', rooms_path, class: 'btn btn-primary m-1' %>
+        <div class="text-center my-5">
+          <%= link_to 'Voir les chambres', rooms_path, class: 'btn btn-primary m-1 w-50' %>
+        </div>
+
       </div>
     </div>
   </div>

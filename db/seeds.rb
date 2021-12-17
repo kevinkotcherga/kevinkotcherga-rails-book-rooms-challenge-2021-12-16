@@ -16,6 +16,7 @@ Room.create(price_per_night: 105, capacity: 2, hotel_id: 2)
 Room.create(price_per_night: 155, capacity: 2, hotel_id: 2)
 Room.create(price_per_night: 35, capacity: 2, hotel_id: 3)
 Room.create(price_per_night: 85, capacity: 2, hotel_id: 3)
+Room.create(price_per_night: 105, capacity: 2, hotel_id: 3)
 Room.create(price_per_night: 205, capacity: 2, hotel_id: 3)
 
 Hotel.create(name: 'Regency', address: '45 Rue des Oliviers')

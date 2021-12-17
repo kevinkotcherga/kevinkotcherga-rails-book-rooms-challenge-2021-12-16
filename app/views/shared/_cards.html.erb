@@ -1,9 +1,12 @@
 <%= link_to room, class: 'text-decoration-none text-dark' do %>
   <div class="card" style="width: 18rem;">
-    <img src="https://pixabay.com/get/g24206de60c99c0aec1a1da126d4678bf042c20023047a7100f2a50045127aebdf6e138b635e857658045195dad56336c_640.jpg" class="card-img-top" alt="">
+    <%= image_tag "room.jpg", class: 'card-img-top' %>
     <div class="card-body">
       <p class="card-text">
         <strong><%= room.price_per_night %> €</strong> - <%= room.capacity %> couchages
+      </p>
+      <p class="font-weight-bold">
+      Hotel : <%= room.hotel.name %>
       </p>
       <p class="card-text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

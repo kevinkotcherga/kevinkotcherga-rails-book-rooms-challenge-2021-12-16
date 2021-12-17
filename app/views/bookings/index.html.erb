@@ -6,14 +6,24 @@
 
         <div class="row">
             <% @bookings.each do |booking| %>
-              <div class="co-12 col-sm-4 col-md-4 reservation-card">
-                <p><%= booking.starts_at %></p>
-                <p><%= booking.ends_at %></p>
+              <div class="card" style="width: 18rem;">
+                <%= image_tag "room.jpg", class: 'card-img-top' %>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong><%= booking.starts_at %></strong> - <%= booking.ends_at %>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                </div>
               </div>
             <% end %>
           </div>
 
-        <%= link_to 'Retour', root_path, class: 'btn btn-primary m-1' %>
+        <%= link_to root_path, class: 'text-secondary text-decoration-none d-flex align-items-center mt-4 btn-size-back' do %>
+          <i class="fas fa-angle-left"></i>
+          <p class="mb-0 ml-1 ">Retour</p>
+        <% end %>
+
       </div>
     </div>
   </div>

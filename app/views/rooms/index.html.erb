@@ -1,14 +1,14 @@
 <div class="container mt-4">
-  <%= link_to root_path, class: 'text-success text-decoration-none d-flex align-items-center ml-3' do %>
+  <%= link_to root_path, class: 'text-secondary text-decoration-none d-flex align-items-center ml-3 btn-size-back' do %>
     <i class="fas fa-angle-left"></i>
-    <p class="mb-0 ml-1">Retour</p>
+    <p class="mb-0 ml-1 ">Retour</p>
   <% end %>
 </div>
 
 <h1 class="text-center my-5">Des hôtels à prix réduit</h1>
 
-<div class="container">
-  <div class="row">
+<div class="container  mb-5">
+  <div class="row d-flex justify-content-center">
     <% @rooms.each do |room| %>
       <div class="d-flex m-4"><%= render 'shared/cards', room: room %></div>
     <% end %>
