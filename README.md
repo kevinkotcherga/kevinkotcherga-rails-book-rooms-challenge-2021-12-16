@@ -1,3 +1,29 @@
+# Bienvenue sur (une partie) de mon épreuve réalisé pour ma certification 👋
+
+Pour cette épreuve j'ai codé ce site, du back au front en 8h.
+Il vous sera ici possibe :
+
+- En tant qu'utilisateur, d'accéder à la page d'accueil.
+- En tant qu'utilisateur, de voir la liste de toutes les chambres.
+- En tant qu'utilisateur, d'accéder aux détails d'une chambre.
+- En tant qu'utilisateur, de réserver une chambre.
+- (bonus personelle) En tant qu'utilisateur, d'accéder à toutes mes réservations à la page "mes reservations".
+
+## Insctruction d'instalation
+
+```
+rbenv install 2.7.3 ou
+rbenv install 2.7.3 && gem install bundler rubocop pry pry-byebug
+gem install bundler:2.2.33
+bundle install
+yarn install
+rails db:create
+rails db:migrate
+rails db:seed
+```
+
+D'autres spécifications ont été demandé dont l'ajout d'un Flatpickr pour le selectionneur de date , l'énoncé est disponible en dessous 👇
+
 # Rails Book Rooms
 
 Dans cet exercice, vous devez implémenter des fonctionnalités dans une application web `rails` à partir du cahier des charges spécifié ci-dessous et correspondant à votre sujet :
