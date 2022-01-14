@@ -11,9 +11,6 @@
               <h1><%= @room.price_per_night %> €</h1>
               <p class="hotel-show-room">Hotel : <%= @room.hotel.name %></p>
             </div>
-
-            <%= link_to 'Tous les hôtels', rooms_path, class: 'btn-room-back' %>
-
           </div>
 
           <%= image_tag "room.jpg", class: '' %>
@@ -21,9 +18,9 @@
 
         </div>
 
-          <div>
+          <div class="me-3 position-relative">
             <%= simple_form_for [ @room, @booking ] do |f| %>
-                <%= f.input :starts_at, label: "Sélectionnez vos dates:",
+                <%= f.input :starts_at, label: "Sélectionnez vos dates : ",
                                 as: :string,
                                 required: false,
                                 input_html: { id: "range_start", class: "d-none"} %>
@@ -37,7 +34,7 @@
             <div id="booking-form-div"
               data-bookings="<%= @bookings_dates.to_json %>">
             </div>
-
+            <%= link_to 'Tous les hôtels', rooms_path, class: 'h2 btn btn-light h-20 rounded text-decoration-none position-absolute bottom-0 end-0' %>
           </div>
             <%#= form.text_field :publish_date, data: { behavior: "flatpickr" } %>
 

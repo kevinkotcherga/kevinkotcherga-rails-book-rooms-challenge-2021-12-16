@@ -14,7 +14,7 @@
         <h1 class="text-center my-5 font-weight-bold">Découvrez nos meilleurs offres du moment</h1>
 
         <div class="container">
-          <div class="row">
+          <div class="d-flex flex-row justify-content-center">
             <% @rooms.each do |room| %>
               <div class="d-flex m-4"><%= render 'shared/cards', room: room %></div>
             <% end %>
@@ -22,7 +22,7 @@
         </div>
 
         <div class="text-center my-5">
-          <%= link_to 'Voir les chambres', rooms_path %>
+          <%= link_to 'Voir les chambres', rooms_path, class: "text-decoration-none h5" %>
         </div>
 
       </div>
