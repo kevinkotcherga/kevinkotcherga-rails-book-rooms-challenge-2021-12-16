@@ -1,5 +1,7 @@
 # Bienvenue sur (une partie) de mon épreuve réalisé pour ma certification 👋
 
+![certification](https://user-images.githubusercontent.com/78493094/149487085-c2db3896-2bd5-44a9-be57-1e506f81f4c7.png)
+
 Pour cette épreuve j'ai codé ce site, du back au front en 8h.
 Il vous sera ici possibe :
 
