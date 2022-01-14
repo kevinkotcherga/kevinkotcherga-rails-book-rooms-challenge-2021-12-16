@@ -68,3 +68,5 @@ gem 'rspec-rails', group: [ :test ]
 gem 'rails-controller-testing', group: [ :test ]
 gem 'faker', group: [ :test ]
 gem 'factory_bot_rails', group: [ :test ]
+
+gem "bootstrap", "~> 5.1"
